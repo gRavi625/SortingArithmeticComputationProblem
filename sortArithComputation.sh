@@ -6,5 +6,6 @@ echo "Enter num c"
 read c
 ans=$((a*b+c))
 echo answer: $ans
-
+ans2=$((c+a/b))
+echo answer2: $ans2
 
