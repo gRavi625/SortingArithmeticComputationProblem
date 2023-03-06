@@ -15,3 +15,7 @@ test_dict[value1]=$ans
 test_dict[value2]=$ans2
 test_dict[value3]=$ans3
 echo ${test_dict[@]}
+for test_dict in $(echo "$ans $ans2 $ans3" | tr ' ' '\n' | sort -nr)
+do
+  echo $test_dict
+done
