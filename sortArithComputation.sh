@@ -19,3 +19,7 @@ for test_dict in $(echo "$ans $ans2 $ans3" | tr ' ' '\n' | sort -nr)
 do
   echo $test_dict
 done
+for test_dict in $(echo "$ans $ans2 $ans3" | tr ' ' '\n' | sort -r)
+do
+ echo $test_dict
+done
